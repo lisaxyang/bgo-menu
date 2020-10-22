@@ -30,7 +30,6 @@ h1 {
 
 .navbar {
     background-color: #452209;
-    
 }
 .navbar-brand {
     color: #FFFFFF;
@@ -167,6 +166,8 @@ h1 {
 }
   
 .photoitem {
+    display: flex;
+    align-self: center;
     align-items: center;
     justify-content: center;
 }
@@ -208,33 +209,44 @@ h1 {
     padding-bottom: 1rem;
   }
 
-/* footer{
-    background-color: #452209;
-    margin-top: 2rem;
-} */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .sidenavbar {
+        display: none;
+    }
 
-/* .glass {
-    background: inherit;
-    width: 950px;
-    height: 100px;
-    position: absolute;
+    /* .menubody {
+        flex-wrap: wrap;
+    } */
+
+    .menuchoices {
+        /* flex-direction: row; */
+        flex-basis: 100%;
+        width: 100%;
+        padding-left: 2rem;
+    }
+    .photomenu {
+        /* flex-direction: row; */
+        width: 100%;
+        flex-basis: 100%;
+        background-color: lawngreen;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        flex-flow: row wrap;
+    }
+    .photofood, .photobtn {
+        /* max-width: 350px; */
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        background-color: lightgray;
+        
+    }
+
+    /* .menuchoices, .photomenu {
+        flex-direction: column-reverse;
+    } */
 }
-
-.glass:before {
-    width: 950px;
-    height: 100px;
-    background: inherit;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(10px);
-}
-
-.restaurantname {
-    position: absolute;
-} */
-
