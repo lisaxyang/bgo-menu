@@ -85,7 +85,8 @@ h1 {
 
 .menuchoices {
     flex-grow: 4;
-    flex-basis: 600px;
+    flex-basis: 450px;
+    flex-shrink: 10;
     color: #291405;
 }
 
@@ -138,14 +139,14 @@ h1 {
 .itemoptions {
     font-size: 1rem;
     font-weight: bold;
-    margin-left: 5rem;
+    margin-left: 3rem;
     margin-right: 5rem;
     justify-content: space-between;
 }
 
 .itemaddons {
     font-size: 1rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
     margin-right: 5rem;
     justify-content: space-between;
 }
@@ -159,17 +160,10 @@ h1 {
 
 .photomenu {
     flex-grow: 0;
-    flex-basis: 350px;
-    flex-shrink: 0;
+    flex-basis: 300px;
+    flex-shrink: 1;
     /* background-color: lawngreen; */
     padding-top: 12rem;
-}
-  
-.photoitem {
-    display: flex;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
 }
 
 .photofood { */
@@ -179,6 +173,13 @@ h1 {
 
 .photobtn {
     padding-bottom: 8rem;
+}
+
+.photofood, .photobtn {
+    align-self: center;
+    justify-content: center;
+    padding-right: 1rem;
+    
 }
 
 .btn {
@@ -231,11 +232,13 @@ and (-webkit-min-device-pixel-ratio: 1) {
         /* flex-direction: row; */
         width: 100%;
         flex-basis: 100%;
-        background-color: lawngreen;
+        /* background-color: lawngreen; */
         align-items: center;
         justify-content: center;
         align-self: center;
         flex-flow: row wrap;
+        padding-right: 0;
+        padding-top: 4rem;
     }
     .photofood, .photobtn {
         /* max-width: 350px; */
@@ -243,7 +246,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
         align-self: center;
         justify-content: center;
         background-color: lightgray;
-        
+        padding-right: 0;
+        padding-left: 1.5rem;
+        border-right: 0;
     }
 
     /* .menuchoices, .photomenu {
