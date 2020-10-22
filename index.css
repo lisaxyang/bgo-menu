@@ -14,18 +14,11 @@ body {
     margin-bottom: 0;
     background-color: #F3ECE7;
     height: 190px;
-    /* background-image: url(BGO\ cafe\ photo\ title\ 2\ frost.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat; */
-    /* background: transparent;
-    backdrop-filter: url(BGO\ cafe\ photo\ title.jpg);
-    backdrop-filter: blur(2px); */
 }
 
 h1 {
     font-size: 3rem;
     color: #452209;
-    /* background-color: white */
 }
 
 .navbar {
@@ -218,10 +211,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
         display: none;
     }
 
-    /* .menubody {
-        flex-wrap: wrap;
-    } */
-
     .menuchoices {
         /* flex-direction: row; */
         flex-basis: 100%;
@@ -229,29 +218,76 @@ and (-webkit-min-device-pixel-ratio: 1) {
         padding-left: 2rem;
     }
     .photomenu {
-        /* flex-direction: row; */
         width: 100%;
         flex-basis: 100%;
-        /* background-color: lawngreen; */
         align-items: center;
         justify-content: center;
-        align-self: center;
-        flex-flow: row wrap;
         padding-right: 0;
         padding-top: 4rem;
     }
     .photofood, .photobtn {
         /* max-width: 350px; */
         width: 100%;
-        align-self: center;
         justify-content: center;
-        background-color: lightgray;
         padding-right: 0;
+        padding-left: 1.7rem;
+        border-right: 0;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    html {
+        font-size: 13px;
+    }
+
+    .jumbotron {
+        margin-bottom: 0;
+        background-color: #F3ECE7;
+        height: 140px;
+    }
+    
+    .sidenavbar {
+        display: none;
+    }
+
+    .menuchoices {
+        /* flex-direction: row; */
+        flex-basis: 100%;
+        width: 100%;
         padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .photomenu {
+        width: 100%;
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+        padding-top: 4rem;
+    }
+    .photofood, .photobtn {
+        /* max-width: 350px; */
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+        padding-left: 1.7rem;
         border-right: 0;
     }
 
-    /* .menuchoices, .photomenu {
-        flex-direction: column-reverse;
-    } */
+    .photofood { */
+        padding-top: 4rem;
+    }
+    
+    .photobtn {
+        padding-bottom: 4rem;
+    }
+
+    .footer {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
 }
