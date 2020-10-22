@@ -23,6 +23,7 @@ h1 {
 
 .navbar {
     background-color: #452209;
+    color: white;
 }
 .navbar-brand {
     color: #FFFFFF;
@@ -35,6 +36,13 @@ h1 {
 }
 .nav-item:hover {
     color: #dcc7b8;
+}
+.navbar-toggler {
+    background-color: #8B4513;
+    border: white;
+}
+.navbar-toggler-icon {
+    /* background-color: red; */
 }
 
 .menubody {
@@ -83,11 +91,29 @@ h1 {
     color: #291405;
 }
 
+.sectiondescrip, .itemdescrip {
+    padding-right: 3rem;
+}
+
 .menutitle {
     font-size: 2.5rem;
     align-items: center;
     justify-content: center;
     margin-top: 1.5rem;
+}
+
+.dropdown {
+    justify-content: center;
+    margin-top: 1rem;
+    display: none;
+}
+
+.btn.btn-secondary:active:hover, .btn.btn-secondary:hover {
+    background-color:  #8B4513;
+}
+
+.dropdown-item:active, .dropdown-item:hover {
+    background-color:  #8B4513;
 }
 
 .menucourse {
@@ -150,7 +176,6 @@ h1 {
     padding-top: 5rem;
 }
 
-
 .photomenu {
     flex-grow: 0;
     flex-basis: 300px;
@@ -172,7 +197,12 @@ h1 {
     align-self: center;
     justify-content: center;
     padding-right: 1rem;
-    
+}
+
+#photobackbtn {
+    display: none;
+    justify-content: center;
+    padding-top: 2rem;
 }
 
 .btn {
@@ -188,7 +218,7 @@ h1 {
 
 .btn-primary:not(:disabled):not(.disabled):focus{ 
     background-color: #8B4513;
-    border-color: #452209;
+    border-color: #8B4513;
 }
 
 .footer {
@@ -201,22 +231,38 @@ h1 {
     margin-top: 3rem;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-  }
+}
 
+/* tablet version */
 @media only screen 
 and (min-device-width: 768px) 
 and (max-device-width: 1024px) 
 and (-webkit-min-device-pixel-ratio: 1) {
+
+    .jumbotron {
+        height: 160px;
+    }
+
     .sidenavbar {
         display: none;
+    }
+
+    .dropdown {
+        display: flex;
     }
 
     .menuchoices {
         /* flex-direction: row; */
         flex-basis: 100%;
         width: 100%;
-        padding-left: 2rem;
+        padding-left: 4rem;
+        padding-right: 2rem;
     }
+
+    .sectiondescrip, .itemdescrip {
+        padding-right: 3rem;
+    }
+
     .photomenu {
         width: 100%;
         flex-basis: 100%;
@@ -233,34 +279,76 @@ and (-webkit-min-device-pixel-ratio: 1) {
         padding-left: 1.7rem;
         border-right: 0;
     }
+
+    .photobtn {
+        padding-bottom: 4rem;
+    }
+
+    #photobackbtn {
+        display: flex;
+        margin-right: 0;
+    }
+
+    
 }
 
+/* phone version */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 768px)
+  and (min-device-width: 1px) 
+  and (max-device-width: 767px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
     html {
         font-size: 13px;
     }
 
+    /* * {
+        border: 1px solid red;
+      } */
+
     .jumbotron {
-        margin-bottom: 0;
-        background-color: #F3ECE7;
         height: 140px;
     }
+
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;..");
+      }
     
     .sidenavbar {
         display: none;
+    }
+
+    .dropdown {
+        display: flex;
     }
 
     .menuchoices {
         /* flex-direction: row; */
         flex-basis: 100%;
         width: 100%;
-        padding-left: 1.5rem;
+        padding-left: 2.5rem;
         padding-right: 1.5rem;
     }
+
+    .menuitem {
+        margin-right: 1.5rem;
+        margin-left: 0;
+    }
+
+    .itemdescrip {
+        margin-left: 0rem;
+    }
+    
+    .itemoptions {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    
+    .itemaddons {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
     .photomenu {
         width: 100%;
         flex-basis: 100%;
@@ -284,6 +372,11 @@ and (-webkit-min-device-pixel-ratio: 1) {
     
     .photobtn {
         padding-bottom: 4rem;
+    }
+
+    #photobackbtn {
+        display: flex;
+        margin-right: 0;
     }
 
     .footer {
