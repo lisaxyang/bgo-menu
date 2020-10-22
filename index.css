@@ -294,6 +294,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
         margin-right: 0;
     }
 
+    .btn.btn-primary:active:hover,
+    .btn.btn-primary:hover {
+        background-color: #8B4513;
+        border-color: #8B4513;
+    }
+
     
 }
 
@@ -382,6 +388,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
     #photobackbtn {
         display: flex;
         margin-right: 0;
+    }
+
+    .btn.btn-primary:active:hover,
+    .btn.btn-primary:hover {
+        background-color: #8B4513;
+        border-color: #8B4513;
     }
 
     .footer {
