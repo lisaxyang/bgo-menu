@@ -62,15 +62,20 @@ h1 {
 
 .sidenav {
     width: 200px;
-    position: fixed;
+    position: absolute;
     z-index: 1;
-    top: 250px;
+    top: 0;
     left: 0;
     background-color: #F3ECE7;
     overflow-x: hidden;
     padding-top: 10px;
     padding-bottom: 20px;
-  }
+}
+
+.sidenav-fixedtop {
+    position: fixed;
+    top: 0;
+}
   
 .sidenav a {
     padding: 6px 8px 6px 16px;

@@ -10,6 +10,7 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
   <link rel="stylesheet" href="index.css">
+
   <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
   <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
@@ -24,7 +25,8 @@
   <!-- Bootstrap navbar from documentation-->
   <nav class="navbar navbar-expand-sm">
     <a class="navbar-brand disabled" href="#">BGO</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <!-- <span class="navbar-toggler-icon"></span> -->
       <div style="font-weight: bold; color:white; padding-bottom: 0.15rem;">+</div>
     </button>
@@ -41,12 +43,12 @@
   </nav>
 
 
-  <div class = "menubody container-fluid">
+  <div class="menubody container-fluid">
     <div class="row">
       <div class="col sidenavbar">
-        
+
         <!-- Side navbar from w3schools -->
-        <div class="sidenav">
+        <div class="sidenav" id="sidenavbar">
           <a href="#Entrees">Entrees</a>
           <a href="#Mexican">&emsp; Mexican</a>
           <a href="#Bagels">&emsp; Bagels</a>
@@ -62,7 +64,7 @@
           <a href="#Drinks">Drinks</a>
         </div>
       </div>
-  
+
       <div class="menuchoices col">
         <div class="menutitle row">
           Menu
@@ -70,7 +72,8 @@
 
         <!-- Bootstrap dropdown button from documentation-->
         <div class="dropdown row">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             Menu Directory
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -91,25 +94,25 @@
             <a class="dropdown-item" href="#PhotoMenu">Photo Menu</a>
           </div>
         </div>
-  
+
         <div class="menucourse row" id="Entrees">
           Entrees
         </div>
-  
+
         <div class="menusection row" id="Mexican">
           Mexican Specialties
         </div>
-  
+
         <div class="menusubsection row" id="Burritos">
           Burritos
         </div>
-  
+
         <div class="singleitem">
           <div class="menuitem row">
             Breakfast Burrito
           </div>
           <div class="itemdescrip row">
-            Scrambled Eggs, Peppers, Onions, Black Beans Pico de Gallo, & Monterey Jack Cheese.    
+            Scrambled Eggs, Peppers, Onions, Black Beans Pico de Gallo, & Monterey Jack Cheese.
           </div>
           <div class="itemoptions row">
             <div>Small</div>
@@ -124,13 +127,13 @@
             <div>1.30</div>
           </div>
         </div>
-  
+
         <div class="singleitem">
           <div class="menuitem row">
             Vegetarian Burrito
           </div>
           <div class="itemdescrip row">
-            Chili, Rice, Pico de Gallo, Sour Cream Lettuce & Monterey Jack Cheese    
+            Chili, Rice, Pico de Gallo, Sour Cream Lettuce & Monterey Jack Cheese
           </div>
           <div class="itemoptions row">
             <div>Small</div>
@@ -141,7 +144,7 @@
             <div>6.02</div>
           </div>
         </div>
-  
+
         <div class="singleitem">
           <div class="menuitem row">
             Chicken or Steak Burrito
@@ -159,11 +162,11 @@
             <div>1.79</div>
           </div>
         </div>
-  
+
         <div class="menusubsection row" id="Quesadillas">
           Quesadillas
         </div>
-  
+
         <div class="singleitem">
           <div class="menuitem row">
             <div>Cheese Quesadilla</div>
@@ -188,18 +191,18 @@
             <div class="simpleprice">8.51</div>
           </div>
         </div>
-  
+
         <div class="menusubsection row">
           Nachos
         </div>
-  
+
         <div class="singleitem">
           <div class="menuitem row">
             <div>Nachos</div>
             <div class="simpleprice">6.02</div>
           </div>
           <div class="itemdescrip row">
-            Tortilla Chips, Monterey Jack Cheese, Black Beans, Pico de Gallo & Sour Cream    
+            Tortilla Chips, Monterey Jack Cheese, Black Beans, Pico de Gallo & Sour Cream
           </div>
           <div class="itemoptions row">
             <div>With Guacomole</div>
@@ -215,14 +218,15 @@
         <div class="menusection row" id="Bagels">
           Bagels
         </div>
-  
+
         <div class="singleitem">
           <div class="menuitem row">
             <div>Just a Plain Bagel</div>
             <div class="simpleprice">0.95</div>
           </div>
           <div class="itemdescrip row">
-            Plain, Blueberry, Cinnamon Sugar, Egg, Rye, Pumpernickel, Sesame, Poppy, Salt, Onion, Cinnamon Raisin, Spinach, Sunflower, Garlic, Wheat, Everything, and Whole Wheat Everything.    
+            Plain, Blueberry, Cinnamon Sugar, Egg, Rye, Pumpernickel, Sesame, Poppy, Salt, Onion, Cinnamon Raisin,
+            Spinach, Sunflower, Garlic, Wheat, Everything, and Whole Wheat Everything.
           </div>
         </div>
 
@@ -246,7 +250,7 @@
             <div class="simpleprice">2.99</div>
           </div>
           <div class="itemdescrip row">
-            Veggie, Chive, Sun Dried Tomato, Jalapeño, Strawberry, Cinnamon Raisin Walnut Olive, Garlic & Herb.    
+            Veggie, Chive, Sun Dried Tomato, Jalapeño, Strawberry, Cinnamon Raisin Walnut Olive, Garlic & Herb.
           </div>
         </div>
 
@@ -254,15 +258,15 @@
         <div class="menucourse row" id="Sides">
           Sides
         </div>
-  
+
         <div class="menusection row" id="Salad">
           Salads
         </div>
 
         <div class="sectiondescrip row">
-          Dressings: Greek, Italian, Balsamic & Honey, Caesar, Oil & Vinegar, Raspberry Poppy Seed, and Honey Mustard.   
+          Dressings: Greek, Italian, Balsamic & Honey, Caesar, Oil & Vinegar, Raspberry Poppy Seed, and Honey Mustard.
         </div>
-  
+
         <div class="singleitem">
           <div class="menuitem row">
             <div>House Salad</div>
@@ -280,7 +284,7 @@
         <div class="menusection row">
           Soups
         </div>
-  
+
         <div class="singleitem">
           <div class="menuitem row">
             <div>House Chicken Noodle Soup</div>
@@ -294,12 +298,12 @@
             <div class="simpleprice">VARIES</div>
           </div>
         </div>
-  
+
 
         <div class="menucourse row" id="Desserts">
           Pastries and Desserts
         </div>
-  
+
         <div class="singleitem">
           <div class="menuitem row">
             <div>Cookies</div>
@@ -319,16 +323,16 @@
         <div class="menucourse row" id="Drinks">
           Drinks
         </div>
-  
+
         <div class="singleitem">
           <div class="menuitem row">
             Hot Coffees or Hot Chocolate
           </div>
-  
+
           <div class="itemdescrip row">
-            Coffee Flavors: Regular, Dark Roast, French Vanilla, Decaf, and Hazelnut. 
+            Coffee Flavors: Regular, Dark Roast, French Vanilla, Decaf, and Hazelnut.
           </div>
-  
+
           <div class="itemoptions row">
             <div>Small</div>
             <div>1.81</div>
@@ -354,42 +358,42 @@
           <a class="btn btn-primary" href="#" role="button">Back to Top</a>
         </div>
 
-      </div> 
+      </div>
       <!-- for entire menu items -->
-  
+
       <div class="photomenu col" id="PhotoMenu">
 
-          <div class="photofood row">
-            <img src="burritos food photo.jpg">
-          </div>
-          <div class="photobtn row">
-            <a class="btn btn-primary" href="#Burritos" role="button">Click to Find in Menu</a>
-          </div>
+        <div class="photofood row">
+          <img src="burritos food photo.jpg" alt="photo of burritos">
+        </div>
+        <div class="photobtn row">
+          <a class="btn btn-primary" href="#Burritos" role="button">Click to Find in Menu</a>
+        </div>
 
-          <div class="photofood row">
-            <img src="quesasdillas food photo.jpg">
-          </div>
-          <div class="photobtn row">
-            <a class="btn btn-primary" href="#Quesadillas" role="button">Click to Find in Menu</a>
-          </div>
+        <div class="photofood row">
+          <img src="quesasdillas food photo.jpg" alt="photo of quesasdillas">
+        </div>
+        <div class="photobtn row">
+          <a class="btn btn-primary" href="#Quesadillas" role="button">Click to Find in Menu</a>
+        </div>
 
-          <div class="photofood row">
-            <img src="bagels food photo.jpg">
-          </div>
-          <div class="photobtn row">
-            <a class="btn btn-primary" href="#Bagels" role="button">Click to Find in Menu</a>
-          </div>
+        <div class="photofood row">
+          <img src="bagels food photo.jpg" alt="photo of bagels">
+        </div>
+        <div class="photobtn row">
+          <a class="btn btn-primary" href="#Bagels" role="button">Click to Find in Menu</a>
+        </div>
 
-          <div class="photofood row">
-            <img src="greek salad food photo.jpg">
-          </div>
-          <div class="photobtn row">
-            <a class="btn btn-primary" href="#Salad" role="button">Click to Find in Menu</a>
-          </div>
+        <div class="photofood row">
+          <img src="greek salad food photo.jpg" alt="photo of greek salad">
+        </div>
+        <div class="photobtn row">
+          <a class="btn btn-primary" href="#Salad" role="button">Click to Find in Menu</a>
+        </div>
 
-          <div class="scrollbackbtn row" id="photobackbtn">
-            <a class="btn btn-primary" href="#" role="button">Back to Top</a>
-          </div>
+        <div class="scrollbackbtn row" id="photobackbtn">
+          <a class="btn btn-primary" href="#" role="button">Back to Top</a>
+        </div>
 
       </div>
 
@@ -403,12 +407,12 @@
         <p>Local Delivery Hours: Monday to Friday 7:00am-2:00pm</p>
       </div>
     </div>
-  
+
   </div>
 
 
 
-  
+
 
 
 
@@ -419,6 +423,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+
+      $(window).scroll(function () {
+
+        console.log($(window).scrollTop());
+
+        if ($(window).scrollTop() > 250) {
+          $('#sidenavbar').addClass('sidenav-fixedtop');
+        }
+
+        if ($(window).scrollTop() < 251) {
+          $('#sidenavbar').removeClass('sidenav-fixedtop');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
